@@ -1,0 +1,7 @@
+kind: Module
+description: My server insight service
+type: kubernetes
+name: service-client
+files:
+  - configmap.yml
+  # - deployment.yaml

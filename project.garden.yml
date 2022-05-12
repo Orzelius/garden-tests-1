@@ -1,0 +1,6 @@
+kind: Project
+name: test-templating
+environments:
+  - name: default
+providers:
+  - name: local-kubernetes

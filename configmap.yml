@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: service-client-configmap
+data:
+  entrypoint.sh: | 
+    #!/usr/bin/env bash
+    if [[ -z "$GRAB_URL" ]]; then
+        echo "Must provide GRAB_URL in environment" 1>&2
+        exit 1
+    fi
